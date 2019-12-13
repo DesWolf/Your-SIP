@@ -74,7 +74,7 @@ class ViewController: UIViewController {
     
     @IBAction func sumPlus(_ sender: Any) {
         
-        if  sum < 10000 { sum = sum + 100 }
+        if  sum < 100000 { sum = sum + 100 }
         sumLabel.text = String(sum) 
     }
 
