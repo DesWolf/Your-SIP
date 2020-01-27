@@ -1,0 +1,6 @@
+framework module Pods_Your_SIP {
+  umbrella header "Pods-Your SIP-umbrella.h"
+
+  export *
+  module * { export * }
+}
