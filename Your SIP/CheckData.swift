@@ -48,7 +48,7 @@ class CheckData {
 
         let correctNumber = stringToInt(str: number)
         var action = 0
-        var res = 0
+        var result = 0
 
         if sign == "" {
             action = 0
@@ -62,11 +62,11 @@ class CheckData {
 
         if limits.checkMinMax(identifier: identifier, number: correctNumber, sign: sign) == false {
             delegate?.alertWrongData()
-            res = correctNumber
+            result = correctNumber
         } else {
-            res = correctNumber + action
+            result = correctNumber + action
         }
 
-        return res
+        return result
     }
 }
