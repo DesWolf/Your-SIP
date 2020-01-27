@@ -51,6 +51,7 @@ class ViewController: UIViewController, AlertWrongData {
     
     @IBAction func agePlus(_ sender: Any) {
         ageLabel.text = String(checkData.fullCheck(identifier: "age", number: ageLabel.text!, sign: "+"))
+    
     }
     
     @IBAction func ageMinus(_ sender: Any) {

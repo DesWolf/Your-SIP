@@ -14,18 +14,21 @@ struct Limits {
     let ageMax = 100
     let retAgeMin = 20
     let retAgeMax = 115
-    let sumMin = 1
+    let sumMin = 0
     let sumMax = 99900
     let percentMin = 0
     let percentMax = 100
     
     func checkMinMax (identifier: String, number: Int, sign: String) -> Bool {
         
+        if ((number == 0) && (sign == "+")) {
+            return true
+        }
+            
         switch identifier {
         case "age":
-            if (((number <= ageMin) && (sign == "-")) ||
-                ((number >= ageMax) && (sign == "+")) ||
-                ((number <= ageMin) || (number >= ageMax) && (sign == ""))) {
+            if (((number <= ageMin) && (sign == "-")) || ((number >= ageMax) && (sign == "+")) ||
+                        ((number <= ageMin) || (number >= ageMax) && (sign == ""))) {
                 return false
             } else {
                 return true

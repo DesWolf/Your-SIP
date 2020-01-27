@@ -62,7 +62,7 @@ class CheckData {
 
         if limits.checkMinMax(identifier: identifier, number: correctNumber, sign: sign) == false {
             delegate?.alertWrongData()
-            res =  correctNumber
+            res = correctNumber
         } else {
             res = correctNumber + action
         }
