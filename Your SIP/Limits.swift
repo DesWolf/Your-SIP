@@ -9,7 +9,7 @@
 import UIKit
 
 struct Limits {
-    
+
     let ageMin = 0
     let ageMax = 100
     let retAgeMin = 20
@@ -18,51 +18,48 @@ struct Limits {
     let sumMax = 99900
     let percentMin = 0
     let percentMax = 100
-    
+
     func checkMinMax (identifier: String, number: Int, sign: String) -> Bool {
-        
-        if ((number == 0) && (sign == "+")) {
+        if (number == 0) && (sign == "+") {
             return true
         }
-            
+
         switch identifier {
         case "age":
-            if (((number <= ageMin) && (sign == "-")) || ((number >= ageMax) && (sign == "+")) ||
-                        ((number <= ageMin) || (number >= ageMax) && (sign == ""))) {
+            if ((number <= ageMin) && (sign == "-")) || ((number >= ageMax) && (sign == "+")) ||
+                        ((number <= ageMin) || (number >= ageMax) && (sign == "")) {
                 return false
             } else {
                 return true
             }
         case "retAge":
-            if (((number <= retAgeMin) && (sign == "-")) ||
+            if ((number <= retAgeMin) && (sign == "-")) ||
                 ((number >= retAgeMax) && (sign == "+")) ||
-                ((number <= retAgeMin) || (number >= retAgeMax) && (sign == ""))) {
+                ((number <= retAgeMin) || (number >= retAgeMax) && (sign == "")) {
                 return false
             } else {
                 return true
             }
-         case "sum":
-            if (((number <= sumMin) && (sign == "-")) ||
+        case "sum":
+            if ((number <= sumMin) && (sign == "-")) ||
                 ((number >= sumMax) && (sign == "+")) ||
-                ((number <= sumMin) || (number >= sumMax) && (sign == ""))) {
+                ((number <= sumMin) || (number >= sumMax) && (sign == "")) {
                 return false
             } else {
                 return true
             }
-          case "percent":
-            if (((number <= percentMin) && (sign == "-")) ||
+        case "percent":
+            if ((number <= percentMin) && (sign == "-")) ||
                 ((number >= percentMax) && (sign == "+")) ||
-                ((number <= percentMin) || (number >= percentMax) && (sign == ""))) {
+                ((number <= percentMin) || (number >= percentMax) && (sign == "")) {
                 return false
             } else {
                 return true
             }
-          
+
         default:
             return false
         }
     }
-    
-}
-    
 
+}

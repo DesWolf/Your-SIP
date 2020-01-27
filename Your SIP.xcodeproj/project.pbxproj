@@ -49,13 +49,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1882893A8EBB550A93D028B3 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Pods;
-			sourceTree = "<group>";
-		};
 		9E586F8323A33E7E0023D6E3 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -103,7 +96,6 @@
 				9EF97BAE23A3717C00F480B2 /* Default-568h@2x.png */,
 				9E8ADDE6239D064E00D3656C /* Your SIP */,
 				9E8ADDE5239D064E00D3656C /* Products */,
-				1882893A8EBB550A93D028B3 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};

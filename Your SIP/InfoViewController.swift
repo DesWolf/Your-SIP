@@ -12,16 +12,12 @@ class InfoViewController: UIViewController {
 
     @IBOutlet var wannaStartButton: UIButton!
     @IBOutlet var textInfoLabel: UILabel!
-   
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         wannaStartButton.layer.cornerRadius = wannaStartButton.frame.size.height / 2
-        
         let sometext =  Texts()
         textInfoLabel.text = sometext.info
     }
-    
     override var prefersStatusBarHidden: Bool {
         return true
     }
